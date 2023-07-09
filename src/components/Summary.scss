@@ -1,0 +1,155 @@
+.summary {
+  // Make it a flex container
+  display: flex;
+
+  // Center the main div
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &-results {
+    background-color: #4a36f3;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    color: #eee;
+
+    z-index: 500;
+
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-circle {
+      border-radius: 50%;
+      background-image: linear-gradient(#4922cd, #4a36f3);
+      width: 150px;
+      height: 150px;
+      margin: 15px 0px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-details {
+      font-size: 12px;
+    }
+
+    &-score {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+
+  &-score {
+    color: black;
+    padding: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(-10px);
+
+    width: 300px;
+
+    &-results {
+      padding: 10px;
+      border-radius: 10px;
+      margin: 20px 0px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &--red {
+        background-color: #fff7f5;
+        color: rgba(255, 0, 0, 0.8);
+      }
+      &--yellow {
+        background-color: #fffbf3;
+        color: #e6d59a;
+      }
+      &--green {
+        background-color: #f2fbfa;
+        color: #7bc9b8;
+      }
+      &--purple {
+        background-color: #f3f3ff;
+        color: #5f6297;
+      }
+    }
+  }
+}
+
+p {
+  margin-bottom: 0.3rem;
+}
+
+.btn-blue {
+  background-color: #303b59;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 15px;
+
+  &:hover {
+    background-color: #303b59;
+    color: #fff;
+  }
+}
+
+svg {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .summary {
+    // Make it a flex container
+    display: flex;
+    flex-direction: column;
+
+    // Center the main div
+    position: static;
+    top: 0%;
+    left: 0%;
+    transform: translate(0);
+
+    &-results {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+
+      width: 100%;
+
+      &-details {
+        width: 250px;
+      }
+    }
+
+    &-score {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      transform: translateY(-10px);
+
+      width: 100%;
+    }
+  }
+
+  .btn-blue {
+    background-color: #303b59;
+    color: #fff;
+    font-size: 12px;
+
+    &:hover {
+      background-color: #303b59;
+      color: #fff;
+    }
+  }
+}
