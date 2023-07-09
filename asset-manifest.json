@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Responsive-Summary-Component/static/css/main.e2a2229c.css",
+    "main.js": "/Responsive-Summary-Component/static/js/main.43aebd28.js",
+    "index.html": "/Responsive-Summary-Component/index.html",
+    "main.e2a2229c.css.map": "/Responsive-Summary-Component/static/css/main.e2a2229c.css.map",
+    "main.43aebd28.js.map": "/Responsive-Summary-Component/static/js/main.43aebd28.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2a2229c.css",
+    "static/js/main.43aebd28.js"
+  ]
+}
